@@ -48,22 +48,22 @@ Time per call: 		22 ns
 Operation system:       macos
 OS Family:              unix
 Architecture:           aarch64
-show last to prevent optimized by compiler 0 
-
 
 ---------- System call SystemTime::now() -------------
 
-Time consumed:          231250000 ns
+Time consumed:          251596000 ns
 Loop count:             10000000
-Time per call:          23 ns
+Time per call:          25 ns
+show last to prevent optimized by compiler 1769057191205847000 
+
 
 ---------- High Resolution Time with CPU tick-------------
 
-show last to prevent optimized by compiler 5483166 
+show last to prevent optimized by compiler 5478291 
 
-Time consumed:          5485000 ns
+Time consumed:          5480000 ns
 Loop count:             10000000
-Time per call:          0.5485 ns
+Time per call:          0.548 ns
 
 ====================================================
 

@@ -43,10 +43,10 @@ fn main() {
     for _ in 0..loop_count {
         last = current_timestamp();
     }
-    let  end=current_timestamp();
-    println!("show last to prevent optimized by compiler {} \n",last);
-        
+    let end=current_timestamp();
+
     print_performance_stats(start,end,loop_count);
+    println!("show last to prevent optimized by compiler {} \n",last);
 
     
     println!("\n---------- High Resolution Time with CPU tick-------------\n" );
