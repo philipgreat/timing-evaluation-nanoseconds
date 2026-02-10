@@ -3,7 +3,7 @@ mod system_info;
 mod high_resolution_timer;
 use crate::date_time_tool::current_timestamp;
 use crate::system_info::report_sys_info;
-use crate::high_resolution_timer::HighResolutionCounter;
+use crate::high_resolution_timer::HighResolutionTimer;
 
 pub fn print_performance_stats(start_ns: u64, end_ns: u64, loop_count: u64) {
     if end_ns < start_ns {
@@ -56,7 +56,7 @@ fn main() {
     let loop_count = 10_000_000;
     let tenth_of_giga = 100_000_000;
     
-    let timer = HighResolutionCounter::start(28*tenth_of_giga);
+    let timer = HighResolutionTimer::start();
     let mut last = 0;
     for _ in 0..loop_count {       
         last = timer.ns();
